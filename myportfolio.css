@@ -1,6 +1,6 @@
         body {  
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #2f22bf;
+            color: #ffffff;
         }
         .navbar {
             background-color: #0d0d0d;
@@ -29,7 +29,7 @@
         }
         .btn-custom {
             padding: 10px 20px;
-            background-color: #333333;
+            background-color: #776efa;
             border: none;
             color: #e6e6e6;
             border-radius:5px;
@@ -52,7 +52,7 @@
             border-radius: 5px;
             padding: 20px;
             margin: 20px 0;
-            background-color: #262626;
+            background-color: #776efa;
             transition: transform 0.3s;
         }
         .section-content:hover {
