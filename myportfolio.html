@@ -1,92 +1,253 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="myportfolio.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">MyPortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <div class="container mt-5 pt-5 fade-in">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <img class="profile" src="myprofile" title="myProfile">
-            </div>
-            <div class="col-md-6 text-center">
-                <h2>DURGA MANI KUMAR DEVUDU</h2>
-                <p>JAVA Full Stack Developer</p>
-                <button class="btn btn-custom"onclick="location.href='#contact'">Contact Info</button>
-                <div>
-                    <i class="fa fa-linkedin-square icon"></i>
-                    <i class="fa fa-github icon"></i>
-                </div>
-            </div>
-        </div> 
-        <div id="about" class="row section-heading slide-up">
-            <div class="col-12 text-center">
-                <h1>About Me</h1>
-                <div class="section-content">
-                    <h2>Education</h2>
-                    <p>B.Tech. in Civil Engineering</p>
-			<p>
-			As a civil engineering student, I'm diving into full stack Java to expand my skills and build projects for my portfolio.
-			I'm learning to create both the front-end, what users see and interact with, and the back-end, the behind-the-scenes logic, of web applications using Java.
-			This helps me showcase my ability to design and develop software solutions alongside my engineering expertise.
-			</p>
-                </div>
-            </div>
-        </div>
-        <div id="projects" class="row section-heading slide-up">
-            <div class="col-12 text-center">
-                <h1>Projects</h1>
-                <div class="section-content">
-                    <h2>Project 1</h2>
-                    <p>Description of project 1.</p>
-                    <h2>Project 2</h2>
-                    <p>Description of project 2.</p>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="row section-heading slide-up">
-            <div class="col-12 text-center">
-                <h1>Contact Me</h1>
-                <div>
-                    <i class="fa fa-envelope-square icon" ></i>
-                    <a href="mailto:duragamanikumar2029@gmail.com" class="icon">Email</a>
-                    <i class="fa fa-linkedin-square icon"></i>
-                    <a href="https://www.linkedin.com/in/devudu-durga-mani-kumar-b21706273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <footer class="footer">
-        <p>&copy; 2024 DURGA MANI KUMAR DEVUDU. All Rights Reserved.</p>
-    </footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Durga Mani Kumar Devudu - Portfolio</title>
+<!-- Favicon -->
+<link rel="icon" href="d-icon.jpg" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="myportfolio.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header text-center py-4">
+    <img src="mani.jpg" class="img-fluid rounded-circle mb-3" width="120" height="120" alt="Profile">
+    <h5 class="sitename">Durga Mani Kumar Devudu</h5>
+    <div class="social-links my-2">
+      <a href="https://www.linkedin.com/in/durga-mani-kumar-devudu-b21706273/" class="me-2"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/mani_d29/?next=%2F"><i class="bi bi-instagram"></i></a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navmenu text-center mb-4">
+    <a href="#hero" class="d-block py-2">Home</a>
+    <a href="#about" class="d-block py-2">About</a>
+    <a href="#skills" class="d-block py-2">Skills</a>
+    <a href="#resume" class="d-block py-2">Resume</a>
+    <a href="#portfolio" class="d-block py-2">Portfolio</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero text-center py-5 bg-dark text-white">
+    <img src="website-design.jpg" class="img-fluid mb-3" alt="Hero Image">
+    <h2>Durga Mani Kumar Devudu</h2>
+    <p>I'm a <span class="typed" data-typed-items="Web Designer, Graphic Designer, WordPress Developer"></span></p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About</h2>
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img src="mani.jpg" class="img-fluid rounded" alt="About Image">
+        </div>
+        <div class="col-lg-8">
+          <h4>UI/UX & Graphic Designer</h4>
+          <p>I’m a WordPress developer with 8 months of experience creating websites for real estate, education,
+            and e-commerce businesses. I use tools like Elementor, Canva, and Photoshop. Now, I'm focusing on graphic design.
+          </p>
+          <ul>
+            <li><strong>Name:</strong> Durga Mani Kumar Devudu</li>
+            <li><strong>Education:</strong> B.Tech (Civil) - Narsimha Reddy Engineering College</li>
+            <li><strong>Phone:</strong> +91-99593 58066</li>
+            <li><strong>City:</strong> Kukatpally, Hyderabad</li>
+            <li><strong>Email:</strong> devudumanikumar@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="mb-3">HTML <div class="progress"><div class="progress-bar" style="width: 99%"></div></div></div>
+          <div class="mb-3">CSS <div class="progress"><div class="progress-bar" style="width: 80%"></div></div></div>
+          <div class="mb-3">Canva <div class="progress"><div class="progress-bar" style="width: 85%"></div></div></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mb-3">WordPress <div class="progress"><div class="progress-bar" style="width: 98%"></div></div></div>
+          <div class="mb-3">Photoshop <div class="progress"><div class="progress-bar" style="width: 55%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Resume</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Technical Skills</h4>
+          <ul>
+            <li>WordPress (custom themes & plugins)</li>
+            <li>HTML & CSS</li>
+            <li>Canva & Adobe Photoshop</li>
+            <li>Elementor, Contact Form 7</li>
+          </ul>
+          <h4>Education</h4>
+          <ul>
+            <li>B.Tech (Civil) - NREC, 2023</li>
+            <li>Diploma (Civil) - St. Mary's, 2020</li>
+            <li>SSC - Govt. High School, 2017</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h4>Experience</h4>
+          <ul>
+            <li>WordPress Developer at Dotsoft Solutions</li>
+            <li>Built static sites using WordPress and Elementor</li>
+            <li>Created WooCommerce pages and landing pages</li>
+          </ul>
+          <h4>Projects</h4>
+          <ul>
+            <li>Kimson Consulting</li>
+            <li>Nature Neste</li>
+            <li>Cruxlytics</li>
+            <li>Aashritha FMS</li>
+            <li>Group 24x7 Security</li>
+            <li>Rawmould Edu</li>
+            <li>Balaji Pest Control</li>
+            <li>Delta Tech Properties</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="kimsonconsulting-mockup.jpg" class="card-img-top" alt="Kimson Consulting">
+            <div class="card-body">
+              <h5 class="card-title">Kimson Consulting</h5>
+              <a href="https://kimsonconsulting.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="nature-neste-mu.jpg" class="card-img-top" alt="Nature Neste">
+            <div class="card-body">
+              <h5 class="card-title">Nature Neste</h5>
+              <a href="https://natureneste.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="ashritha-fms-mu.jpg" class="card-img-top" alt="Aashritha FMS">
+            <div class="card-body">
+              <h5 class="card-title">Aashritha FMS</h5>
+              <a href="https://aashrithaservices.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="Group24-7-mu.jpg" class="card-img-top" alt="Group 24x7 Security">
+            <div class="card-body">
+              <h5 class="card-title">Group 24x7 Security</h5>
+              <a href="https://group24x7security.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="rawmould-edu-mu.jpg" class="card-img-top" alt="Rawmould Edu">
+            <div class="card-body">
+              <h5 class="card-title">Rawmould Edu</h5>
+              <a href="https://rawmouldedu.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="balaji-pest-control-mu.jpg" class="card-img-top" alt="Balaji Pest Control">
+            <div class="card-body">
+              <h5 class="card-title">Balaji Pest Control</h5>
+              <a href="https://balajipestcontrols.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="solutions-Delta-tech-mu.jpg" class="card-img-top" alt="Delta Tech Properties">
+            <div class="card-body">
+              <h5 class="card-title">Delta Tech Properties</h5>
+              <a href="https://deltatechproperties.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="cruxlytics-mu.jpg" class="card-img-top" alt="Cruxlytics">
+            <div class="card-body">
+              <h5 class="card-title">Cruxlytics</h5>
+              <a href="https://cruxlytics.com/" class="btn btn-outline-primary btn-sm">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Durga Mani Kumar Devudu. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="btn btn-primary position-fixed bottom-0 end-0 m-3" style="display: none;"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const typed = document.querySelector(".typed");
+      if (typed) {
+        const items = typed.getAttribute("data-typed-items").split(",");
+        new Typed(".typed", {
+          strings: items,
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: true
+        });
+      }
+
+      const scrollTopBtn = document.querySelector('#scroll-top');
+      window.addEventListener('scroll', () => {
+        scrollTopBtn.style.display = window.scrollY > 100 ? 'flex' : 'none';
+      });
+
+      scrollTopBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
+
 </html>
