@@ -122,3 +122,13 @@ a:hover {
     margin: 0.5rem 0;
   }
 }
+.nav-tabs .nav-link {
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-tabs .nav-link.active {
+  color: #EC6233;
+  border-color: #EC6233 #EC6233 #fff;
+}
+
