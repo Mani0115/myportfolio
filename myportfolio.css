@@ -2,27 +2,29 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fff;
   color: #333;
   line-height: 1.6;
 }
 
-h2, h4, h5 {
+h2, h3, h5 {
   font-weight: 600;
 }
-
+h3{
+	font-size: 25px;
+}
 a {
   text-decoration: none;
-  color: #EC6233;
+  color: #000;
 }
 
 a:hover {
-  color: #6A2065;
+  color: #FF000C;
 }
 
 /* Header */
 .header {
-  background-color: #222;
+  background: linear-gradient(to right, #000000, #FF000C);
   color: #fff;
 }
 
@@ -33,7 +35,7 @@ a:hover {
 
 .social-links a {
   font-size: 1.2rem;
-  color: #EC6233;
+  color: #fff;
   margin: 0 0.5rem;
   transition: 0.3s;
 }
@@ -56,7 +58,7 @@ a:hover {
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, #6A2065, #EC6233);
+  background: linear-gradient(to right, #000000, #FF000C);
   color: #fff;
 }
 
@@ -74,19 +76,6 @@ a:hover {
 .about ul li {
   padding: 5px 0;
   border-bottom: 1px solid #eaeaea;
-}
-
-/* Skills */
-.skills .progress {
-  background-color: #e0e0e0;
-  border-radius: 8px;
-  height: 10px;
-  overflow: hidden;
-}
-
-.skills .progress-bar {
-  background-color: #6A2065;
-  height: 100%;
 }
 
 /* Portfolio */
@@ -131,4 +120,3 @@ a:hover {
   color: #EC6233;
   border-color: #EC6233 #EC6233 #fff;
 }
-
