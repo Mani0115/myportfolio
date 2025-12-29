@@ -437,7 +437,9 @@ gtag('config', 'YOUR-GA4-ID');
     </div>
   </div>
 </section>
-
+<!-- Custom Cursor -->
+<div class="cursor cursor--large"></div>
+<div class="cursor cursor--small"></div>
 
   <!-- Footer -->
   <footer class="footer bg-dark text-white text-center py-3">
@@ -474,9 +476,33 @@ gtag('config', 'YOUR-GA4-ID');
       });
     });
   </script>
+	<script>
+  const cursorLarge = document.querySelector('.cursor--large');
+  const cursorSmall = document.querySelector('.cursor--small');
+
+  document.addEventListener('mousemove', (e) => {
+    cursorLarge.style.left = e.clientX + 'px';
+    cursorLarge.style.top = e.clientY + 'px';
+
+    cursorSmall.style.left = e.clientX + 'px';
+    cursorSmall.style.top = e.clientY + 'px';
+  });
+
+  // Optional: scale cursor on hover
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursorLarge.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursorLarge.style.transform = 'translate(-50%, -50%) scale(1)';
+    });
+  });
+</script>
+
 </body>
 
 </html>
+
 
 
 
