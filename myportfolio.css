@@ -120,4 +120,43 @@ a:hover {
   color: #EC6233;
   border-color: #EC6233 #EC6233 #fff;
 }
+/* Hide default cursor */
+* {
+  cursor: none;
+}
+
+/* Cursor base */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
+/* Large circle */
+.cursor--large {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: transform 0.15s ease-out;
+}
+
+/* Small dot */
+.cursor--small {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Hover effect (links, buttons) */
+a:hover ~ .cursor--large,
+button:hover ~ .cursor--large {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
 
